@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parallax Scrolling Website</title>
+	
+	<link rel="stylesheet" href="./css/styles.css">
+	
+</head>
+<body>
+	<header id="header">
+		<a href="#" class="logo">Logo</a>
+		<ul class="navigation">
+			<li> <a href="#" class="active">Home</a></li>
+			<li> <a href="#">About</a></li>
+			<li> <a href="#">Events</a></li>
+			<li> <a href="#">Contacts</a></li>
+		</ul>
+	</header>
+	<section>
+		<h2 id="txt">Hello Winter!</h2>
+		
+		<img src="img/mountain_01.png" id="m1">
+		<img src="img/mountain_02.png" id="m2">
+		<img src="img/mountain_03.png" id="m3">
+		<img src="img/mountain_04.png" id="m4">
+		<img src="img/trees-2.png" id="tr2">
+		<img src="img/cable_cars.png" id="crs">
+		<img src="img/house.png" id="house">
+	</section>
+	<div class="sec">
+		<h2>Welcome to Wonderland</h2>
+		<p>Карпати – унікальний регіон з особливим повітрям, що має цілющий вплив на фізичне та ментальне здоров’я. Дихається тут, у всіх сенсах, легше: легені заповнює чисте повітря, а голову – чисті думки. Саме тому Карпати століттями є місцем відновлення не для одного покоління українців.</p>
+
+			<p>Дослідники Harvard T.H. Chan School of Public Health зазначають, що перебування на природі, зокрема в горах, знижує ризики хронічних захворювань, зменшує артеріальний тиск і покращує якість сну. Наші Карпати кивають дослідникам зі згодою – усе так. Чисте гірське повітря стимулює роботу легенів і серцево-судинної системи, сприяє покращенню імунітету та полегшує симптоми алергій.</p>
+			
+			<p>Крім того, дослідження Університету Чунцина "Explore the Benefits of Natural Air: New Insights from Field and Chamber Tests on Cognitive Performance" доводить, що гірське повітря сприяє покращенню когнітивних функцій людини. Воно підвищує рівень серотоніну – нейромедіатора, який регулює настрій. Високогірне середовище також зменшує рівень кортизолу, гормону стресу, завдяки розслаблювальним ефектам природи та збільшенню кисневого обміну в організмі. Гірські прогулянки допомагають знижувати рівень тривожності та поліпшувати загальне самопочуття.</p>
+			
+			<p>Аби традиція відновлення в горах і надалі крокувала нашим побутом та культурою, курорт Bukovel активно стежить за чистотою повітря. Регулярний моніторинг за допомогою сучасного обладнання в серці Карпат дає змогу гарантувати гостям найкращі умови для оздоровлення. Саме такий підхід робить відпочинок не лише приємним, але й ефективним для відновлення сил та здоров’я. Перебування в Карпатах – це приємно та корисно.</p>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+	gsap.from("#txt", {
+		scrollTrigger : {
+			scrub: true
+		},
+		x: 350,
+	})
+	gsap.from("#m1", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 100,
+	})
+	gsap.from("#m2", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 50,
+	})
+	gsap.from("#m3", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 200,
+	})
+	gsap.from("#m4", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 150,
+	})
+	
+	gsap.from("#tr2", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 100,
+	})
+	
+	gsap.from("#crs", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 100,
+	})
+	gsap.from("#house", {
+		scrollTrigger : {
+			scrub: true
+		},
+		y: 100,
+	})
+	
+</script>
+</body>
+</html>
